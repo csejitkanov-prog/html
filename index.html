@@ -13,11 +13,11 @@
     }
     body{
         margin: 0;
-        background-color: aqua;
+        background-color: rgb(28, 5, 132);
         font-family:"Noto Sans", sans-serif;
     }
     .from-container{
-        background-color: rgb(216, 8, 8);
+        background-color: rgb(60, 8, 216);
         max-width: 450px;
         width: 95%;
         margin: auto;
@@ -60,15 +60,17 @@
         border-radius: 6pz;
         padding: 0.6rem 0;
         width: 150px;
-        margin-left: clac(100% - 150px);
+        margin-left: calc(100% - 150px);
         cursor: pointer;
         transition: 0.2s ease;
+       
     }
     #sumbit:active{
         transform: translate(2px, 2px);
         box-shadow: none;
     }
-    laber{
+
+    label{
         display: block;
         font-size: 0.9rem;
         letter-spacing: 0.75px;
@@ -86,7 +88,7 @@
 </head>
 <body>
     <div class="from-container">
-        <h3 class="from-hading">our form</h3>
+        <h3 class="from-hading">Our form</h3>
         <form id="from">
             <div class="field">
                 <label for="name">Name</label>
@@ -95,6 +97,19 @@
             <div class="field">
                 <label for="email">Email</label>
                 <input type="email" id="email">
+
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="text" id="password">
+            </div>
+
+            <div class="field">
+                <label for="second name">Second name</label>
+                <input type="text" id=" second name">
+            </div>
+
+
             </div>
             <input type="submit" id="sumbit" value="send">
         </form>
